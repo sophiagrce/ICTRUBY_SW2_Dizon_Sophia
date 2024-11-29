@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Containers Demo</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+
+  body{
+    background-image:url(pic1.jpeg);
+    color: whitesmoke;
+    font-family:monospace;
+  }
+  .container{
+    background-color: #181e4f;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 4px;
+ }
+  select{
+    width: 100%;
+    padding: 7px;
+    border-radius: 4px;
+  }
+ textarea{
+  border-radius: 4px;
+  width: 100%;
+  padding: 7px;
+ }
+</style>
+
+<body>
+<div class="container mt-5">
+  <h1 class="mb-4 text-center"><b>ROBOTICS CLUB REGISTRATION FORM</b></h1>
+  <div>
+    <form>
+      <div class="row md-3">
+        <div class="col-md-6 col-demo">
+          <label for="exampleName">Name</label>
+        <input type="name" class="form-control" id="exampleName">
+        </div>
+        <div class="col-md-6 col-demo">
+          <label for="exampleAge">Age</label>
+        <input type="age" class="form-control" id="exampleAge">
+        </div>
+      </div>
+      <div class="row md-3">
+        <div class="col-md-6 col-demo">
+           <label for="exampleEmail"><br>Email Address</br></label>
+        <input type="email" class="form-control" id="exampleEmail">
+        </div>
+        <div class="col-md-6 col-demo">
+          <label for="examplenumber"><br>Phone Number</br></label>
+        <input type="number" class="form-control" id="example number">
+        </div>
+      </div>
+      <div class="form-check mb-3"> <br>
+        <p><b>Preferred Robotics Topics</b></p>
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+        <label class="form-check-label" for="exampleCheck1">
+          Programming
+        </label> <br>
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+        <label class="form-check-label" for="exampleCheck1">
+          Electronics
+        </label> <br>
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+        <label class="form-check-label" for="exampleCheck1">
+          Mechanical Design
+        </label> <br> <br>
+
+        <p><b>Robotics Experience Level</b></p>
+        <input type="radio" class="form-check-input" id="exampleCheck1" >
+        <label class="form-check-label" for="exampleCheck1">
+          Beginner
+        </label> <br>
+        <input type="radio" class="form-check-input" id="exampleCheck1" >
+        <label class="form-check-label" for="exampleCheck1">
+          Intermediate
+        </label> <br>
+        <input type="radio" class="form-check-input" id="exampleCheck1" >
+        <label class="form-check-label" for="exampleCheck1">
+          Advanced
+        </label><br>
+
+      <br><label for="select"><b>Preffered Robotics Project</b></label><br>
+        <select id="select"name="select">
+        <option value="" selected disabled>Choose a Project...</option>
+        <option value="Self-Balancing Robot">Self-Balancing Robot</option>
+        <option value="Voice-Controlled Robot">Voice-Controlled Robot</option>
+        <option value="Pick-and-Place Robot">Pick-and-Place Robot</option>
+        <option value="Object Sorting Robot">Object Sorting Robot</option>
+        <option value="Snake Robot">Snake Robot</option>
+        </select><br>
+
+        <label><b>Statement of Interest</b></label>
+    <textarea id="textarea" name="textarea" rows="3"></textarea>
+
+        <br><button type="submit" class="btn btn-primary">Submit</button>
+
+      </div>
+    </form>
+  </div>
+</div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
